@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* primary #171718*/
+
+/* secondary #5c62ec*/
+
 .primary {
   @apply bg-[#171718];
 }
