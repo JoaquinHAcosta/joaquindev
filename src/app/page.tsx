@@ -34,6 +34,20 @@ export default function Home() {
           set drive my potential.
         </p>
       </section>
+      <section className="w-screen">
+        <h2 className="py-4 text-3xl font-bold mx-3">Technologies</h2>
+        <div className="flex justify-around">
+          <div className="border m-4">
+            <h4>Frontend</h4>
+          </div>
+          <div className="border m-4">
+            <h4>Backend</h4>
+          </div>
+        </div>
+      </section>
+      <footer className="bg-white w-screen text-black">
+        <h4>Redes</h4>
+      </footer>
     </main>
   )
 }
