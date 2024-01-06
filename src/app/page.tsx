@@ -2,8 +2,8 @@ import { techsFront, techsBack } from './../mocks/techs.json'
 
 export default function Home() {
   return (
-    <main className="bg-[#171718] flex min-h-screen flex-col items-center justify-between text-center px-2">
-      <header className="text-4xl font-bold h-screen max-w-[660px] flex flex-col justify-center leading-relaxed">
+    <main className="bg-[#171718] flex flex-col items-center justify-between text-center">
+      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold min-h-[800px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center leading-relaxed ">
         <h1>
           <strong className="text-6xl ">
             Hi, my name is <em className="text-6xl text-[#5c62ec]">Zoma</em>
@@ -20,11 +20,11 @@ export default function Home() {
           Download CV
         </a>
       </header>
-      <section className="bg-white w-screen flex flex-col text-black items-center py-14">
+      <section className="bg-white w-screen flex flex-col text-black items-center py-14 px-8">
         <div>
-          <h2 className="text-3xl font-bold mb-7">About ME</h2> y foto
+          <h2 className="text-3xl font-bold mb-7">About Me</h2> y foto
         </div>
-        <p className="max-w-[34rem]">
+        <p className="max-w-[34rem] ">
           👨‍🎓 Young student passionate about Full Stack Web Programming, driven
           by an insatiable thirst for knowledge and challenges. My versatility,
           commitment and constant search for quality define my approach to work.
@@ -37,20 +37,20 @@ export default function Home() {
           set drive my potential.
         </p>
       </section>
-      <section className="w-screen">
-        <h2 className="py-4 text-3xl font-bold mx-3">Technologies</h2>
+      <section className="w-screen py-14">
+        <h2 className="pb-4 text-3xl font-bold">Technologies</h2>
         <div>
-          <div className="border rounded-lg m-4">
+          <div className="border rounded-lg m-4 p-2 max-w-[800px] md:mx-auto ">
             <h4>Frontend</h4>
-            <div className="flex items-center overflow-x-scroll">
+            <div className="flex items-center overflow-x-scroll justify-center">
               {techsFront.map((tech) => (
                 <p key={tech.name}>{tech.name}</p>
               ))}
             </div>
           </div>
-          <div className="border rounded-lg m-4">
+          <div className="border rounded-lg m-4 p-2 max-w-[800px] md:mx-auto ">
             <h4>Backend</h4>
-            <div className="flex items-center overflow-x-scroll">
+            <div className="flex items-center overflow-x-scroll justify-center">
               {techsBack.map((tech) => (
                 <p key={tech.name}>{tech.name}</p>
               ))}

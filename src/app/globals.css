@@ -30,6 +30,6 @@ body {
 
 /* secondary #5c62ec*/
 
-.primary {
-  @apply bg-[#171718];
+.active {
+  @apply border-[#5c62ec];
 }
