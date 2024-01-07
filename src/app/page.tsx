@@ -19,7 +19,7 @@ export default function Home() {
           <br />a frontend developer
         </h1>
         <div className="my-3 text-lg">
-          <p>improving my skills with no limit</p>
+          <p className="italic">Improving my skills with no limit</p>
         </div>
         <a
           className="max-w-[200px] py-3 px-7 bg-[#5c62ec] text-base rounded-md mx-auto"
@@ -30,7 +30,7 @@ export default function Home() {
       </header>
       <section className="bg-white w-screen flex flex-col text-black items-center py-14 px-8">
         <div>
-          <h2 className="text-3xl font-bold mb-7">About Me</h2>
+          <h2 className="text-4xl font-bold mb-7">About Me</h2>
         </div>
         <div className="md:flex gap-4 items-center">
           <div className="my-4 border-6 border-red rounded-full">
@@ -38,7 +38,7 @@ export default function Home() {
               src="/profile-pic.png"
               width={400}
               height={400}
-              className="mx-auto min-w-72"
+              className="mx-auto min-w-72 "
               alt="yop"
             />
           </div>
