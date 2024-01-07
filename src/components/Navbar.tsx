@@ -14,17 +14,17 @@ const Navbar = () => {
           <h1 className="bold px-4">Joaquin Acosta</h1>
         </Link>
         <div className="flex gap-4 px-2">
-          <Link className={path === '/' ? 'border-b' : ''} href={'/'}>
+          <Link className={path === '/' ? 'activePath' : ''} href={'/'}>
             Home
           </Link>
           <Link
-            className={path === '/projects' ? 'border-b' : ''}
+            className={path === '/projects' ? 'activePath' : ''}
             href={'/projects'}
           >
-            Projects
+            +Projects
           </Link>
           <Link
-            className={path === '/contact' ? 'border-b' : ''}
+            className={path === '/contact' ? 'activePath' : ''}
             href={'/contact'}
           >
             Contact

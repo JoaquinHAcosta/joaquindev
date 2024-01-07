@@ -1,9 +1,9 @@
-import { techsFront, techsBack } from './../mocks/techs.json'
+import TechCarrousel from '@/components/TechCarrousel'
 
 export default function Home() {
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center">
-      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold min-h-[800px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center leading-relaxed ">
+      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-[600px] md:min-h-[800px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center leading-relaxed ">
         <h1>
           <strong className="text-6xl ">
             Hi, my name is <em className="text-6xl text-[#5c62ec]">Zoma</em>
@@ -38,25 +38,8 @@ export default function Home() {
         </p>
       </section>
       <section className="w-screen py-14">
-        <h2 className="pb-4 text-3xl font-bold">Technologies</h2>
-        <div>
-          <div className="border rounded-lg m-4 p-2 max-w-[800px] md:mx-auto ">
-            <h4>Frontend</h4>
-            <div className="flex items-center overflow-x-scroll justify-center">
-              {techsFront.map((tech) => (
-                <p key={tech.name}>{tech.name}</p>
-              ))}
-            </div>
-          </div>
-          <div className="border rounded-lg m-4 p-2 max-w-[800px] md:mx-auto ">
-            <h4>Backend</h4>
-            <div className="flex items-center overflow-x-scroll justify-center">
-              {techsBack.map((tech) => (
-                <p key={tech.name}>{tech.name}</p>
-              ))}
-            </div>
-          </div>
-        </div>
+        <h2 className="pb-4 text-4xl font-bold">My Stack</h2>
+        <TechCarrousel />
       </section>
     </main>
   )

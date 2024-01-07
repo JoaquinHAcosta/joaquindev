@@ -1,12 +1,33 @@
-import { links } from './../mocks/links.json'
+import Link from 'next/link'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <footer className="bg-white w-screen text-black py-8 flex flex-col items-center">
-      {links.map((link) => (
-        <p key={link.name}>{link.name}</p>
-      ))}
-      <p>©2024 Joaquindev.com</p>
+      <ul className="flex gap-4 min-h-6 mb-6">
+        <li>
+          <Link href="!#">
+            <FaGithub className="media-link" />
+          </Link>
+        </li>
+        <li>
+          <Link href="!#">
+            <FaInstagram className="media-link" />
+          </Link>
+        </li>
+        <li>
+          <Link href="!#">
+            <FaLinkedin className="media-link" />
+          </Link>
+        </li>
+        <li>
+          <Link href="!#">
+            <FaTwitter className="media-link" />
+          </Link>
+        </li>
+      </ul>
+
+      <p>©2024 By Zoma</p>
     </footer>
   )
 }

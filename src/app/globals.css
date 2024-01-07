@@ -30,6 +30,18 @@ body {
 
 /* secondary #5c62ec*/
 
-.active {
-  @apply border-[#5c62ec];
+.activePath {
+  @apply border-b border-[#5c62ec];
+}
+
+.media-link {
+  @apply h-[36px] w-[36px];
+}
+
+.media-link:hover {
+  @apply h-[36px] w-[36px] text-[#5c62ec];
+}
+
+.tech-icon {
+  @apply h-[60px] w-[60px] mx-auto;
 }
