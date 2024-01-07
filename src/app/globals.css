@@ -45,3 +45,11 @@ body {
 .tech-icon {
   @apply h-[60px] w-[60px] mx-auto;
 }
+
+.about-me p {
+  @apply flex text-start leading-relaxed mb-4 text-lg;
+}
+
+.icon-about {
+  @apply min-w-[32px] min-h-[32px] mr-3;
+}

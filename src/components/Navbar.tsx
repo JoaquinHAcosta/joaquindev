@@ -8,10 +8,10 @@ const Navbar = () => {
   const path = usePathname()
 
   return (
-    <nav className="bg-[#171718] flex justify-center md:text-2xl py-4 border-b">
-      <div className="flex justify-between items-center md:min-w-[770px] md:max-w-[1170px] lg:min-w-[1070px]">
+    <nav className="fixed bg-[#171718] flex justify-center md:text-2xl py-4 border-b">
+      <div className="flex justify-between items-center w-screen md:min-w-[770px]  lg:max-w-[960px]">
         <Link href={'/'}>
-          <h1 className="bold px-4">Joaquin Acosta</h1>
+          <h1 className="extra-bold md:text-3xl px-4">Joaquin Acosta</h1>
         </Link>
         <div className="flex gap-4 px-2">
           <Link className={path === '/' ? 'activePath' : ''} href={'/'}>
@@ -24,7 +24,9 @@ const Navbar = () => {
             +Projects
           </Link>
           <Link
-            className={path === '/contact' ? 'activePath' : ''}
+            className={`mr-1 md:mr-4 ${
+              path === '/contact' ? 'activePath' : ''
+            }`}
             href={'/contact'}
           >
             Contact
