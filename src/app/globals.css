@@ -18,12 +18,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #171718;
+  @apply overscroll-x-none;
 }
 
 /* primary #171718*/
@@ -31,7 +27,7 @@ body {
 /* secondary #5c62ec*/
 
 .activePath {
-  @apply border-b border-[#5c62ec];
+  @apply border-b-4 border-[#5c62ec];
 }
 
 .media-link {
@@ -53,3 +49,24 @@ body {
 .icon-about {
   @apply min-w-[32px] min-h-[32px] mr-3;
 }
+
+.contact {
+  @apply flex mx-2 items-center;
+}
+
+.icon-contact {
+  @apply text-2xl md:text-3xl text-[#5c62ec] justify-center mr-1;
+}
+
+.contact label p:first-child {
+  @apply font-bold text-[#5c62ec];
+}
+
+/* .contact label {
+  @apply md:text-xl md:mb-2;
+}
+
+
+.contact label p:second-child {
+  @apply border-y;
+} */

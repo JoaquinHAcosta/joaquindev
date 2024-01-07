@@ -1,8 +1,12 @@
 import TechCarrousel from '@/components/TechCarrousel'
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaBook } from 'react-icons/fa'
 import {
   PiBookBold,
+  PiCpuBold,
+  PiFireSimpleBold,
+  PiGitlabLogoFill,
   PiRocketLaunchBold,
   PiStudentBold,
   PiUsersFour,
@@ -11,26 +15,39 @@ import {
 export default function Home() {
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center">
-      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center leading-relaxed mx-1">
+      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed mx-1">
         <h1>
-          <strong className="text-6xl ">
-            Hi, my name is <em className="text-6xl text-[#5c62ec]">Zoma</em>
+          <strong className="md:text-6xl">
+            Hi, my name is{' '}
+            <em className=" text-5xl md:text-6xl text-[#5c62ec] mx-2">Zoma</em>
+            {/* <PiCpuBold /> */}
           </strong>
           <br />a frontend developer
         </h1>
         <div className="my-3 text-lg">
-          <p className="italic">Improving my skills with no limit</p>
+          <p className="italic flex items-center gap-2 justify-center">
+            Improving my skills with no limit
+            <PiGitlabLogoFill />
+          </p>
         </div>
-        <a
-          className="max-w-[200px] py-3 px-7 bg-[#5c62ec] text-base rounded-md mx-auto"
-          href="#!"
-        >
-          Download CV
-        </a>
+        <div className="md:max-w-[600px] mx-auto flex flex-wrap justify-center gap-2">
+          <Link
+            className="py-3 px-7 bg-[#5c62ec] text-base rounded-md mx-1"
+            href="#!"
+          >
+            Download CV
+          </Link>
+          <Link
+            href={'/contact'}
+            className="max-w-[200px] py-3 px-7 text-[#5c62ec] bg-white text-base rounded-md mx-1"
+          >
+            Contact Me :)
+          </Link>
+        </div>
       </header>
       <section className="bg-white w-screen flex flex-col text-black items-center py-14 px-8">
         <div>
-          <h2 className="text-4xl font-bold mb-7">About Me</h2>
+          <h2 className="text-4xl font-bold mb-7 ">About Me</h2>
         </div>
         <div className="md:flex gap-4 items-center">
           <div className="my-4 border-6 border-red rounded-full">

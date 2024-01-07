@@ -27,11 +27,11 @@ import {
 const techsFront = [
   {
     name: 'Typescript',
-    icon: <SiTypescript className="tech-icon text-[#007acc]" />,
+    icon: <SiTypescript className="tech-icon text-[#007acc] " />,
   },
   {
     name: 'JavaScript',
-    icon: <SiJavascript className="tech-icon text-[#f0db4f]" />,
+    icon: <SiJavascript className="tech-icon text-[#f0db4f] " />,
   },
   {
     name: 'React',
@@ -118,7 +118,7 @@ const techsBack = [
   },
   {
     name: 'Insomnia',
-    icon: <SiInsomnia className="tech-icon text-[#9c787a]" />,
+    icon: <SiInsomnia className="tech-icon text-[#6a54f7]" />,
   },
 ]
 
