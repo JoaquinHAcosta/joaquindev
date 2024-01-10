@@ -161,8 +161,9 @@ export const projects = [
     title: 'Photo Album App',
     techs: ['Cloudinary', 'NextJS', 'Cloudinary'],
     image: '/project-photoalbumapp.png',
-    description: '',
-    repository: ``,
+    description:
+      'Application made with NExtJs that uses the Cloudinary service to upload photos in addition to being able to apply AI filters to them using the same API.',
+    repository: `https://github.com/JoaquinHAcosta/photoGallery`,
     deploy: '',
   },
 ]
