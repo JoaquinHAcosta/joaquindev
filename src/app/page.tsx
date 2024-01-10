@@ -55,6 +55,7 @@ export default function Home() {
               src="/profile-pic.PNG"
               width={400}
               height={400}
+              unoptimized
               className="mx-auto min-w-72 "
               alt="yop"
             />
