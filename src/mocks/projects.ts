@@ -72,7 +72,7 @@ export const projects = [
     deploy: 'https://threads-clone-rust.vercel.app',
   },
   {
-    title: 'Basic E-commerce (Shopping Cart Practice)',
+    title: 'Shopping Cart Practice',
     techs: ['React', 'ViteJS'],
     image: '/project-basicecommerce.png',
     description: `📖 Basic E-commerce project, made to practice localStorage, useContext and useReducer. October 2023 🚀`,

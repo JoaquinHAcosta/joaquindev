@@ -1,3 +1,4 @@
+import CardRipple from '@/components/CardRipple'
 import HorizontalCard from '@/components/HorizontalCard'
 import { projects } from '@/mocks/projects'
 
@@ -7,7 +8,7 @@ const ProjectsPage = () => {
       <h2>ProjectsPage</h2>
       <div className="flex items-center justify-center flex-wrap md:gap-3 pt-20 pb-10">
         {projects.map((project, i) => (
-          <HorizontalCard {...project} key={i} />
+          <CardRipple {...project} key={i} />
         ))}
       </div>
     </div>

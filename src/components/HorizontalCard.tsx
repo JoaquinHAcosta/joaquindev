@@ -27,7 +27,7 @@ const HorizontalCard = ({ title, techs, image, description }: ProjectProps) => {
         <h4 className="mb-2 block font-sans text-2xl font-bold text-white leading-snug tracking-normal antialiased">
           {title}
         </h4>
-        <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+        <p className="mb-8 block font-sans text-base text-gray-700 line-clamp-3">
           {description}
         </p>
         <a className="inline-block" href="#">
