@@ -51,11 +51,10 @@ export default function Home() {
         </div>
         <div className="md:flex gap-4 items-center">
           <div className="my-4 border-6 border-red rounded-full">
-            <Image
+            <img
               src="/profile-pic.PNG"
               width={400}
               height={400}
-              unoptimized
               className="mx-auto min-w-72 "
               alt="yop"
             />
