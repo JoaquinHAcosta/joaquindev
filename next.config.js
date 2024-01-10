@@ -1,12 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  //   exportPathMap: function () {
-  //     return {
-  //       '/': { page: '/' },
-  //       // Otras rutas que desees exportar
-  //     }
-  //   },
+  distDir: 'dist',
 }
 
 module.exports = nextConfig
