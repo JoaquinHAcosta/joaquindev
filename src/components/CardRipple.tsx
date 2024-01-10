@@ -10,6 +10,7 @@ type ProjectProps = {
   image: string
   description: string
   repository: string
+  deploy: string
 }
 
 const CardRipple = ({
@@ -18,6 +19,7 @@ const CardRipple = ({
   image,
   description,
   repository,
+  deploy,
 }: ProjectProps) => {
   return (
     <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -39,12 +41,15 @@ const CardRipple = ({
           {/* {description} */}
         </p>
         <div className="flex gap-2">
-          <button
+          <Link
+            href={deploy}
             type="button"
-            className="inline-block rounded bg-[#5c62ec] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:bg-white hover:text-[#5c62ec]"
+            className={`${
+              deploy === '' ? 'hidden' : ''
+            } inline-block rounded bg-[#5c62ec] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:bg-white hover:text-[#5c62ec]`}
           >
             Deploy
-          </button>
+          </Link>
 
           <Link
             href={repository}
