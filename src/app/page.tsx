@@ -14,8 +14,8 @@ import {
 
 export default function Home() {
   return (
-    <main className="bg-[#171718] flex flex-col items-center justify-between text-center">
-      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed mx-1">
+    <main className="bg-[#171718] flex flex-col items-center justify-between text-center w-screen">
+      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed">
         <h1>
           <strong className="md:text-6xl">
             Hi, my name is{' '}
@@ -25,7 +25,7 @@ export default function Home() {
           <br />a frontend developer
         </h1>
         <div className="my-3 text-lg">
-          <p className="italic flex items-center gap-2 justify-center">
+          <p className="italic flex items-center justify-center">
             Improving my skills with no limit
             <PiGitlabLogoFill />
           </p>

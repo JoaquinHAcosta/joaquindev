@@ -1,11 +1,9 @@
 import Link from 'next/link'
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedin,
   FaMapMarkerAlt,
   FaRegEnvelope,
-  FaTwitter,
 } from 'react-icons/fa'
 
 const ContactPage = () => {

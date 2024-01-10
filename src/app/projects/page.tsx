@@ -1,9 +1,15 @@
-import React from 'react'
+import HorizontalCard from '@/components/HorizontalCard'
+import { projects } from '@/mocks/projects'
 
 const ProjectsPage = () => {
   return (
-    <div className="min-h-[84vh] flex flex-col justify-center items-center">
-      ProjectsPage
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <h2>ProjectsPage</h2>
+      <div className="flex items-center justify-center flex-wrap md:gap-3 pt-20 pb-10">
+        {projects.map((project, i) => (
+          <HorizontalCard {...project} key={i} />
+        ))}
+      </div>
     </div>
   )
 }

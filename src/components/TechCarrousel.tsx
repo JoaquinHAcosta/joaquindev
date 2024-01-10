@@ -125,7 +125,7 @@ const techsBack = [
 const TechCarrousel = () => {
   return (
     <div>
-      <div className="border rounded-lg m-4 p-2 max-w-[960px] mx-5 lg:mx-auto ">
+      <div className="border rounded-lg m-4 py-2 max-w-[960px] mx-5 lg:mx-auto ">
         <h4 className="text-2xl my-2">Frontend</h4>
         <ul className="flex flex-wrap items-center justify-center gap-5">
           {techsFront.map((tech, idx) => (
