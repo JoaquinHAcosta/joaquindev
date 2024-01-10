@@ -12,6 +12,8 @@ import {
   PiUsersFour,
 } from 'react-icons/pi'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 export default function Home() {
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center w-screen">
@@ -51,8 +53,8 @@ export default function Home() {
         </div>
         <div className="md:flex gap-4 items-center">
           <div className="my-4 border-6 border-red rounded-full">
-            <img
-              src="/profile-pic.PNG"
+            <Image
+              src={`${isProd ? '/portfolioNext' : ''}/profile-pic.PNG`}
               width={400}
               height={400}
               className="mx-auto min-w-72 "
