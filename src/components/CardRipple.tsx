@@ -28,7 +28,7 @@ const CardRipple = ({
       <div className="relative overflow-hidden bg-cover bg-no-repeat">
         <Image
           className="rounded-t-lg h-full w-full object-cover"
-          src={`${isProd ? '/portfolioNext' : ''}${image}`}
+          src={`${isProd ? '/joaquindev' : ''}${image}`}
           alt="project image"
           width={380}
           height={380}
