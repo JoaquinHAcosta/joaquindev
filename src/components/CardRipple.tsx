@@ -13,6 +13,8 @@ type ProjectProps = {
   deploy: string
 }
 
+const isProd = process.env.NODE_ENV === 'production'
+
 const CardRipple = ({
   title,
   techs,
@@ -26,7 +28,7 @@ const CardRipple = ({
       <div className="relative overflow-hidden bg-cover bg-no-repeat">
         <Image
           className="rounded-t-lg h-full w-full object-cover"
-          src={image}
+          src={`${isProd ? '/portfolioNext' : ''}/${image}`}
           alt="project image"
           width={380}
           height={380}
