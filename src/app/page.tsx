@@ -54,7 +54,7 @@ export default function Home() {
         <div className="md:flex gap-4 items-center">
           <div className="my-4 border-6 border-red rounded-full">
             <Image
-              src={`${isProd ? '/portfolioNext' : ''}/profile-pic.png`}
+              src={`${isProd ? '/joaquindev' : ''}/profile-pic.png`}
               width={400}
               height={400}
               className="mx-auto min-w-72 "
