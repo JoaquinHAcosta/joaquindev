@@ -8,14 +8,10 @@ import {
   PiStudentBold,
   PiUsersFour,
 } from 'react-icons/pi'
-import CVFile from '../../public/CV_JoaquinAcostaESP.pdf'
 
 const isProd = process.env.NODE_ENV === 'production'
 
 export default function Home() {
-  const openCV = () => {
-    window.open(CVFile)
-  }
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center w-screen">
       <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed">
@@ -36,8 +32,8 @@ export default function Home() {
         <div className="md:max-w-[600px] mx-auto flex flex-wrap justify-center gap-2">
           <Link
             className="py-3 px-7 bg-[#5c62ec] text-base rounded-md mx-1"
-            href="#!"
-            onClick={openCV}
+            href="https://drive.google.com/file/d/1dzyU5RNxjMlRtWkfsASXgxPU4ssd9FPt/view?usp=drive_link"
+            target="_blank"
           >
             Download CV
           </Link>
