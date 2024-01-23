@@ -41,7 +41,7 @@ export const projects = [
     description:
       'The application is an online food store with customizable profile creation, shopping cart and payment method (working on that). It is easy to use and has an attractive interface.',
     repository: `https://github.com/JoaquinHAcosta/food-app`,
-    deploy: '',
+    deploy: 'https://pizza-shop-n13pejdzy-joaquinhacosta.vercel.app',
   },
   {
     title: 'Film Flow',
