@@ -15,6 +15,9 @@ import {
 const isProd = process.env.NODE_ENV === 'production'
 
 export default function Home() {
+  const openCV = () => {
+    window.open('/CV_JoaquinAcostaESP.docx')
+  }
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center w-screen">
       <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed">
@@ -36,6 +39,7 @@ export default function Home() {
           <Link
             className="py-3 px-7 bg-[#5c62ec] text-base rounded-md mx-1"
             href="#!"
+            onClick={openCV}
           >
             Download CV
           </Link>
