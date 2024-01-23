@@ -8,7 +8,7 @@ import {
   PiStudentBold,
   PiUsersFour,
 } from 'react-icons/pi'
-import CVFile from '../../public/CV_JoaquinAcostaESP.docx'
+import CVFile from '../../public/CV_JoaquinAcostaESP.pdf'
 
 const isProd = process.env.NODE_ENV === 'production'
 
