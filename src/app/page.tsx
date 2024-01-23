@@ -1,22 +1,20 @@
 import TechCarrousel from '@/components/TechCarrousel'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaBook } from 'react-icons/fa'
 import {
   PiBookBold,
-  PiCpuBold,
-  PiFireSimpleBold,
   PiGitlabLogoFill,
   PiRocketLaunchBold,
   PiStudentBold,
   PiUsersFour,
 } from 'react-icons/pi'
+import CVFile from '../../public/CV_JoaquinAcostaESP.docx'
 
 const isProd = process.env.NODE_ENV === 'production'
 
 export default function Home() {
   const openCV = () => {
-    window.open('/CV_JoaquinAcostaESP.docx')
+    window.open(CVFile)
   }
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center w-screen">
