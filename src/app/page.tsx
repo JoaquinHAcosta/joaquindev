@@ -1,15 +1,8 @@
-import TechCarrousel from '@/components/TechCarrousel'
-import Image from 'next/image'
+import About from '@/components/Sections/About'
+import Projects from '@/components/Sections/Projects'
+import Stack from '@/components/Sections/Stack'
 import Link from 'next/link'
-import {
-  PiBookBold,
-  PiGitlabLogoFill,
-  PiRocketLaunchBold,
-  PiStudentBold,
-  PiUsersFour,
-} from 'react-icons/pi'
-
-const isProd = process.env.NODE_ENV === 'production'
+import { PiGitlabLogoFill } from 'react-icons/pi'
 
 export default function Home() {
   return (
@@ -25,8 +18,8 @@ export default function Home() {
         </h1>
         <div className="my-3 text-lg">
           <p className="italic flex items-center justify-center">
-            Improving my skills with no limit
-            <PiGitlabLogoFill />
+            Improving my skills with no limit{' '}
+            <PiGitlabLogoFill className="ml-2" />
           </p>
         </div>
         <div className="md:max-w-[600px] mx-auto flex flex-wrap justify-center gap-2">
@@ -45,46 +38,9 @@ export default function Home() {
           </Link>
         </div>
       </header>
-      <section className="bg-white w-screen flex flex-col text-black items-center py-14 px-8">
-        <div>
-          <h2 className="text-4xl font-bold mb-7 ">About Me</h2>
-        </div>
-        <div className="md:flex gap-4 items-center">
-          <div className="my-4 border-6 border-red rounded-full">
-            <Image
-              src={`${isProd ? '/joaquindev' : ''}/profile-pic.png`}
-              width={400}
-              height={400}
-              className="mx-auto min-w-72 "
-              alt="yop"
-            />
-          </div>
-          <div className="about-me max-w-[34rem]">
-            <p>
-              <PiStudentBold className="icon-about" />
-              Driven by an insatiable thirst for knowledge and challenges. My
-              versatility, commitment and constant search for quality define my
-              approach to work.
-            </p>
-            <p>
-              <PiBookBold className="icon-about" />I always seek to learn and
-              improve, staying updated on technologies and trends.
-            </p>
-            <p>
-              <PiUsersFour className="icon-about" /> My versatility allows me to
-              collaborate effectively with different personalities and roles.
-            </p>
-            <p>
-              <PiRocketLaunchBold className="icon-about" /> My commitment and
-              loyalty to the goals I set drive my potential.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="w-screen py-14">
-        <h2 className="pb-4 text-4xl font-bold">My Stack</h2>
-        <TechCarrousel />
-      </section>
+      <Projects />
+      <Stack />
+      <About />
     </main>
   )
 }
