@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section className="bg-white w-screen flex flex-col text-black items-center py-14 px-8">
       <div>
-        <h2 className="flex items-center text-4xl font-bold mb-7 ">
+        <h2 className="flex items-center text-4xl font-bold">
           <FaDiagramProject className="text-[#5c62ec] mr-2" />
           Latest Projects
         </h2>
@@ -20,8 +20,10 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <Link className="buttonPurple text-lg" href={'/projects'}>
-        <span className="hover:border-b-2 border-[#5c62ec]">+Projects</span>
+      <Link href={'/projects'}>
+        <span className="text-xl font-bold text-[#5c62ec] hover:border-b-2 border-[#5c62ec]">
+          +Projects -&gt;
+        </span>
       </Link>
     </section>
   )
