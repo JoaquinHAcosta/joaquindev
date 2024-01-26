@@ -12,7 +12,6 @@ export default function Home() {
           <strong className="md:text-6xl">
             Hi, my name is{' '}
             <em className=" text-5xl md:text-6xl text-[#5c62ec] mx-2">Zoma</em>
-            {/* <PiCpuBold /> */}
           </strong>
           <br />a fullstack developer
         </h1>

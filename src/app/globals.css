@@ -63,7 +63,7 @@ body {
 }
 
 .buttonPurple {
-  @apply inline-block rounded bg-[#5c62ec] px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white hover:bg-white hover:text-[#5c62ec];
+  @apply rounded bg-[#5c62ec] px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white hover:bg-white hover:text-[#5c62ec];
 }
 
 /* .contact label {

@@ -14,7 +14,7 @@ const Projects = () => {
         </h2>
       </div>
       <div>
-        <div className="flex items-center justify-center flex-wrap md:gap-3 pt-20 pb-10">
+        <div className="flex gap-2 items-center justify-center flex-wrap md:gap-3 pt-20 pb-10">
           {projects.slice(0, 3).map((project, i) => (
             <CardRipple {...project} key={i} />
           ))}
