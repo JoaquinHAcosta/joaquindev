@@ -50,9 +50,7 @@ const CardRipple = ({
             href={deploy}
             type="button"
             target="blank"
-            className={`${
-              deploy === '' ? 'hidden' : ''
-            } inline-block rounded bg-[#5c62ec] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:bg-white hover:text-[#5c62ec]`}
+            className={`${deploy === '' ? 'hidden' : ''} buttonPurple text-xs`}
           >
             Deploy
           </Link>
@@ -60,7 +58,7 @@ const CardRipple = ({
           <Link
             href={repository}
             target="blank"
-            className="inline-block rounded bg-[#5c62ec] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:bg-white hover:text-[#5c62ec]"
+            className="buttonPurple text-xs"
           >
             Repository
           </Link>

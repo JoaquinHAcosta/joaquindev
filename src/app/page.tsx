@@ -14,7 +14,7 @@ export default function Home() {
             <em className=" text-5xl md:text-6xl text-[#5c62ec] mx-2">Zoma</em>
             {/* <PiCpuBold /> */}
           </strong>
-          <br />a frontend developer
+          <br />a fullstack developer
         </h1>
         <div className="my-3 text-lg">
           <p className="italic flex items-center justify-center">

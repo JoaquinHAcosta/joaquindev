@@ -2,6 +2,7 @@ import React from 'react'
 import CardRipple from '../CardRipple'
 import { projects } from '@/mocks/projects'
 import { FaDiagramProject } from 'react-icons/fa6'
+import Link from 'next/link'
 
 const Projects = () => {
   return (
@@ -19,6 +20,9 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      <Link className="buttonPurple text-lg" href={'/projects'}>
+        <span className="hover:border-b-2 border-[#5c62ec]">+Projects</span>
+      </Link>
     </section>
   )
 }
