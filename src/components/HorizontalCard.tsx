@@ -6,16 +6,17 @@ type ProjectProps = {
   techs: string[]
   image: string
   description: string
+  date: string
 }
 
 const HorizontalCard = ({ title, techs, image, description }: ProjectProps) => {
   return (
-    <div className="flex w-[90vw] h-[18rem] md:w-[40rem] flex-row rounded border-4 border-white bg-[#797DDC] bg-clip-border text-gray-700 shadow-md">
+    <div className="flex h-[18rem] flex-row rounded border-4 border-white bg-[#797DDC] bg-clip-border text-gray-700 shadow-md">
       <div className="m-0 w-2/5 shrink-0 overflow-hidden bg-white bg-clip-border text-gray-700">
         <Image
           src={image}
-          width={380}
-          height={380}
+          width={400}
+          height={400}
           alt="image"
           className="h-full w-full object-cover"
         />

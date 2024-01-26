@@ -11,6 +11,7 @@ type ProjectProps = {
   description: string
   repository: string
   deploy: string
+  date: string
 }
 
 const isProd = process.env.NODE_ENV === 'production'
@@ -22,25 +23,27 @@ const CardRipple = ({
   description,
   repository,
   deploy,
+  date,
 }: ProjectProps) => {
   return (
-    <div className="block rounded-lg bg-white max-w-96 max-h-80 dark:bg-neutral-700">
-      <div className="relative overflow-hidden bg-cover bg-no-repeat">
+    <div className="flex w-[1200px] h-[320px] rounded-lg bg-white dark:bg-neutral-700 border">
+      <div className="w-[380px] overflow-hidden bg-cover bg-no-repeat">
         <Image
-          className="rounded-t-lg h-full w-full object-cover"
+          className="rounded-t-lg h-full object-cover"
           src={`${isProd ? '/joaquindev' : ''}${image}`}
           alt="project image"
           width={380}
           height={380}
         />
-        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+        {/* <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div> */}
       </div>
-      <div className="p-6">
+      <div className="p-6 w-[700px]">
+        <time className="text-sm">{date}</time>
         <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
           {title}
         </h5>
         <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-          {/* {description} */}
+          {description}
         </p>
         <div className="flex gap-2">
           <Link

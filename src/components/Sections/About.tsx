@@ -1,6 +1,6 @@
+import { BsFilePersonFill } from 'react-icons/bs'
 import {
   PiBookBold,
-  PiGitlabLogoFill,
   PiRocketLaunchBold,
   PiStudentBold,
   PiUsersFour,
@@ -14,7 +14,10 @@ const About = () => {
   return (
     <section className="bg-white w-screen flex flex-col text-black items-center py-14 px-8">
       <div>
-        <h2 className="text-4xl font-bold mb-7 ">About Me</h2>
+        <h2 className="flex text-4xl font-bold mb-7 ">
+          <BsFilePersonFill className="text-[#5c62ec] mr-2" />
+          About Me
+        </h2>
       </div>
       <div className="md:flex gap-4 items-center">
         <div className="my-4 border-6 border-red rounded-full">
