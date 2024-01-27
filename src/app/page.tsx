@@ -4,10 +4,17 @@ import Stack from '@/components/Sections/Stack'
 import Link from 'next/link'
 import { PiGitlabLogoFill } from 'react-icons/pi'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 export default function Home() {
   return (
     <main className="bg-[#171718] flex flex-col items-center justify-between text-center w-screen">
-      <header className="bg-[url('/header-bg.png')] bg-no-repeat bg-center text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed">
+      <header
+        className={`text-4xl font-bold h-screen md:min-h-[960px] sm:min-w-[600px] md:max-w-[1060px] flex flex-col justify-center md:leading-relaxed  
+        bg-[url("${
+          isProd ? '/joaquindev' : ''
+        }/header-bg.png")] bg-no-repeat bg-center`}
+      >
         <h1>
           <strong className="md:text-6xl">
             Hi, my name is{' '}
